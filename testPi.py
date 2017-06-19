@@ -1,7 +1,7 @@
 import paho.mqtt.publish as publish
 import time
-print("Sending 0...")
-publish.single("ledStatus", "0", hostname="macman")
+print("0")
+publish.single("ledStatus", "0", hostname="192.168.2.5")
 time.sleep(1)
-print("Sending 1...")
-publish.single("ledStatus", "1", hostname="macman")
+print("1")
+publish.single("ledStatus", "1", hostname="192.168.2.5")
